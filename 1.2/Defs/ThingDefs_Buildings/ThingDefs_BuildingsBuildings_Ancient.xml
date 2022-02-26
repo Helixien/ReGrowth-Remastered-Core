@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RG_AncientGraveFull</defName>
+		<label>ancient grave</label>
+		<description>An ancient final resting place of a long dead person.</description>
+		<thingClass>ReGrowthCore.Building_AncientGraveFull</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ruins/AncientGraveFull/AncientGraveFull</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<constructEffect>ConstructDirt</constructEffect>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<size>(1,2)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<MeditationFocusStrength>0.02</MeditationFocusStrength>
+		</statBases>
+		<passability>Standable</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<expandHomeArea>false</expandHomeArea>
+			<isInert>true</isInert>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<claimable>true</claimable>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_GraveFull">
+						<offset>0.10</offset>
+					</li>
+					<li Class="FocusStrengthOffset_GraveCorpseRelationship">
+						<offset>0.10</offset>
+					</li>
+					<li Class="FocusStrengthOffset_NearbyGraves">
+						<defs>
+							<li>Grave</li>
+							<li>Sarcophagus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>4</maxBuildings>
+						<focusPerFullGrave>0.01</focusPerFullGrave>
+						<explanationKey>MeditationFocusPerGrave</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="ReGrowthCore.AncientGraveExtensions">
+				<pawnKindDefsToSpawnInside>
+					<li>Tribal_Archer</li>
+					<li>Villager</li>
+					<li>Tribal_Warrior</li>
+					<li>Tribal_ChiefMelee</li>
+					<li>Town_Guard</li>
+					<li>Grenadier_Destructive</li>
+					<li>Mercenary_Elite</li>
+				</pawnKindDefsToSpawnInside>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs> 

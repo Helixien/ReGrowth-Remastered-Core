@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core</li>
+			<li>RimJobWorld</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="HumpShroom"]/label</xpath>
+					<value>
+						<label>humpokus</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="HumpShroom"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="HumpShroom"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Item/Drug/HumpshroomCollected</texPath>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

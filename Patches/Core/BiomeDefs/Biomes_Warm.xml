@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ================ Biome Tropical Rainforest ================ -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/plantDensity</xpath>
+					<value>
+						<plantDensity>1.85</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+					<value>
+						<wildPlants>
+							<Plant_Grass>8.0</Plant_Grass>
+							<Plant_TallGrass>3.0</Plant_TallGrass>
+							<Plant_ShrubLow>3.0</Plant_ShrubLow>
+							<Plant_Alocasia>0.8</Plant_Alocasia>
+							<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
+							<Plant_TreePalm>0.3</Plant_TreePalm>
+							<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
+							<Plant_TreeTeak>0.2</Plant_TreeTeak>
+							<Plant_Bush>0.45</Plant_Bush>
+							<Plant_Clivia>0.07</Plant_Clivia>
+							<Plant_Berry>0.08</Plant_Berry>
+							<Plant_Rafflesia>0.0008</Plant_Rafflesia>
+						</wildPlants>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/baseWeatherCommonalities</xpath>
+					<value>
+						<RG_FoggySnow>2</RG_FoggySnow>
+						<RG_Drizzle>2</RG_Drizzle>
+						<RG_Overcast>6</RG_Overcast>
+						<RG_Windy>8</RG_Windy>
+						<RG_Monsoon>0.5</RG_Monsoon>
+						<RG_Hail>1</RG_Hail>
+					</value>
+				</li>
+
+				<!-- ================ Biome Tropical Swamp================ -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/plantDensity</xpath>
+					<value>
+						<plantDensity>1.90</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+					<value>
+						<wildPlants>
+							<Plant_Grass>6.0</Plant_Grass>
+							<Plant_TallGrass>1.5</Plant_TallGrass>
+							<Plant_ShrubLow>2.0</Plant_ShrubLow>
+							<Plant_Bush>0.45</Plant_Bush>
+							<Plant_TreeWillow>1.92</Plant_TreeWillow>
+							<Plant_TreeCypress>1.92</Plant_TreeCypress>
+							<Plant_Alocasia>0.9</Plant_Alocasia>
+							<Plant_TreeCecropia>1.0</Plant_TreeCecropia>
+							<Plant_Chokevine>1.5</Plant_Chokevine>
+							<Plant_TreePalm>0.3</Plant_TreePalm>
+							<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
+							<Plant_TreeTeak>0.2</Plant_TreeTeak>
+							<Plant_Clivia>0.14</Plant_Clivia>
+							<Plant_Berry>0.03</Plant_Berry>
+							<Plant_Rafflesia>0.010</Plant_Rafflesia>
+						</wildPlants>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/baseWeatherCommonalities</xpath>
+					<value>
+						<RG_FoggySnow>2</RG_FoggySnow>
+						<RG_Drizzle>2</RG_Drizzle>
+						<RG_Overcast>6</RG_Overcast>
+						<RG_Windy>8</RG_Windy>
+						<RG_Monsoon>0.5</RG_Monsoon>
+						<RG_Hail>1</RG_Hail>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
