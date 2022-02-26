@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[@Name = "BaseFilth"]/filth/rainWashes</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -17,7 +16,6 @@
 			</value>
 		</match>
 	</Operation>
-
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
@@ -53,7 +51,15 @@
 					<rainWashes>false</rainWashes>
 				</value>
 			</li>
+				<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+					<xpath>/Defs/ThingDef[defName = "Filth_OilSmear"]/filth/rainWashes</xpath>
+					<value>
+						<rainWashes>false</rainWashes>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Ideology">
+					<xpath>/Defs/ThingDef[defName = "Filth_OilSmear"]/filth/disappearsInDays</xpath>
+				</li>
 		</operations>
 	</Operation>
-
 </Patch>

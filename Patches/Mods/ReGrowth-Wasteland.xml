@@ -1,13 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Core</li>
-			<li>[HLX] ReGrowth - Wasteland</li>
+			<li>ReGrowth: Wastelands</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- ================ Biome Wasteland ================ -->
 				<li Class="PatchOperationAdd">
@@ -22,8 +19,6 @@
 					</value>
 				</li>
 			</operations>
-
 		</match>
 	</Operation>
-
 </Patch>

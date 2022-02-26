@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>ReGrowth: Aspen Forests</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<!-- ================ Biome Apsen Forest ================ -->
 				<li Class="PatchOperationAdd">
@@ -16,8 +14,6 @@
 					</value>
 				</li>
 			</operations>
-
 		</match>
 	</Operation>
-
 </Patch>
