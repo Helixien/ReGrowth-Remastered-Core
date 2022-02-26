@@ -122,7 +122,7 @@
 			</li>
 			<!-- ================ Biome Sea Ice ================ -->
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName = "Sea Ice"]/baseWeatherCommonalities</xpath>
+				<xpath>/Defs/BiomeDef[defName = "SeaIce"]/baseWeatherCommonalities</xpath>
 				<value>
 					<RG_FoggySnow>6</RG_FoggySnow>
 					<RG_Overcast>8</RG_Overcast>
