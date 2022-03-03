@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Core-and-Framework\\1.3\\Source\\ReGrowthCore\\ReGrowthCore.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Remastered-Core\\1.3\\Source\\ReGrowthCore\\ReGrowthCore.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Core-and-Framework\\1.3\\Source\\ReGrowthCore\\ReGrowthCore.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Remastered-Core\\1.3\\Source\\ReGrowthCore\\ReGrowthCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Core-and-Framework\\1.3\\Source\\ReGrowthCore\\ReGrowthCore.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Remastered-Core\\1.3\\Source\\ReGrowthCore\\ReGrowthCore.csproj",
         "projectName": "ReGrowthCore",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Core-and-Framework\\1.3\\Source\\ReGrowthCore\\ReGrowthCore.csproj",
-        "packagesPath": "C:\\Users\\kylia\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Core-and-Framework\\1.3\\Source\\ReGrowthCore\\obj\\",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Remastered-Core\\1.3\\Source\\ReGrowthCore\\ReGrowthCore.csproj",
+        "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ReGrowth-Remastered-Core\\1.3\\Source\\ReGrowthCore\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\kylia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,9 +34,17 @@
       "frameworks": {
         "net472": {
           "dependencies": {
+            "Krafs.Rimworld.Ref": {
+              "target": "Package",
+              "version": "[1.3.3287, )"
+            },
             "Lib.Harmony": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "RimWorld.MultiplayerAPI": {
+              "target": "Package",
+              "version": "[0.4.0, )"
             }
           }
         }

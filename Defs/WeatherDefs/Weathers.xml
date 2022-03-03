@@ -85,6 +85,7 @@
 			<saturation>1.25</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
+	
 	<WeatherDef>
 		<defName>RG_Hail</defName>
 		<label>hail</label>
@@ -108,6 +109,7 @@
 		</ambientSounds>
 		<overlayClasses>
 			<li>VFECore.WeatherOverlay_Custom</li>
+			<li>VFECore.WeatherOverlay_Effects</li>
 		</overlayClasses>
 		<skyColorsDay>
 			<sky>(0.8,0.8,0.8)</sky>
@@ -147,8 +149,18 @@
 				<worldOverlayPanSpeed2>0.009</worldOverlayPanSpeed2>
 				<worldPanDir2>(-0.48, -1)</worldPanDir2>
 			</li>
+			<li Class="VFECore.WeatherEffectsExtension">
+				<ticksInterval>300~600</ticksInterval>
+				<killsPlants>false</killsPlants>
+				<damageToApply>Blunt</damageToApply>
+				<damageRange>0.1~0.5</damageRange>
+				<percentOfPawnsToDealDamage>0.1</percentOfPawnsToDealDamage>
+				<activeOnWeatherPerceived>RG_Hail</activeOnWeatherPerceived>
+				<worksOnNonFleshPawns>false</worksOnNonFleshPawns>
+			</li>
 		</modExtensions>
 	</WeatherDef>
+	
 	<!-- ================ New rain weathers ================ -->
 	<WeatherDef>
 		<defName>RG_Drizzle</defName>

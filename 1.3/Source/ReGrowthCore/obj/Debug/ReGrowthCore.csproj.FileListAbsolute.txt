@@ -24,3 +24,8 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Core-and-Fr
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Core-and-Framework\1.3\Source\ReGrowthCore\obj\Debug\ReGrowthCore.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Core-and-Framework\1.3\Source\ReGrowthCore\obj\Debug\ReGrowthCore.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Core-and-Framework\1.3\Source\ReGrowthCore\obj\Debug\ReGrowthCore.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Remastered-Core\1.3\Source\ReGrowthCore\obj\Debug\ReGrowthCore.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Remastered-Core\1.3\Source\ReGrowthCore\obj\Debug\ReGrowthCore.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Remastered-Core\1.3\Source\ReGrowthCore\obj\Debug\ReGrowthCore.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Remastered-Core\1.3\Assemblies\ReGrowthCore.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ReGrowth-Remastered-Core\1.3\Source\ReGrowthCore\obj\Debug\ReGrowthCore.csproj.CopyComplete
