@@ -6,54 +6,9 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!--============================================== RG_Overcast ==============================================-->
+				<!--============================================== RG_Overcast and RG_Windy ==============================================-->
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_Overcast"]/skyColorsDay</xpath>
-					<value>
-						<skyColorsDay>
-							<sky>(0.75,0.75,0.75)</sky>
-							<shadow>(1,1,1)</shadow>
-							<overlay>(0.765,0.765,0.765)</overlay>
-							<saturation>0.75</saturation>
-						</skyColorsDay>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_Overcast"]/skyColorsDusk</xpath>
-					<value>
-						<skyColorsDusk>
-							<sky>(0.5,0.17,0.1)</sky>
-							<shadow>(1,1,1)</shadow>
-							<overlay>(0.7,0.7,0.7)</overlay>
-							<saturation>0.85</saturation>
-						</skyColorsDusk>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_Overcast"]/skyColorsNightEdge</xpath>
-					<value>
-						<skyColorsNightEdge>
-							<sky>(0.25,0.25,0.22)</sky>
-							<shadow>(1,1,1)</shadow>
-							<overlay>(0.6,0.6,0.6)</overlay>
-							<saturation>0.95</saturation>
-						</skyColorsNightEdge>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_Overcast"]/skyColorsNightMid</xpath>
-					<value>
-						<skyColorsNightMid>
-							<sky>(0.2,0.3,0.2)</sky>
-							<shadow>(0.8,0.8,0.8)</shadow>
-							<overlay>(0.2,0.2,0.2)</overlay>
-							<saturation>0.3</saturation>
-						</skyColorsNightMid>
-					</value>
-				</li>
-				<!--============================================== RG_Windy ==============================================-->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_Windy"]/skyColorsDay</xpath>
+					<xpath>/Defs/WeatherDef[defName = "RG_Overcast" or defName = "RG_Windy"]/skyColorsDay</xpath>
 					<value>
 						<skyColorsDay>
 							<sky>(1,1,1)</sky>
@@ -64,7 +19,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_Windy"]/skyColorsDusk</xpath>
+					<xpath>/Defs/WeatherDef[defName = "RG_Overcast" or defName = "RG_Windy"]/skyColorsDusk</xpath>
 					<value>
 						<skyColorsDusk>
 							<sky>(0.36,0.26,0.46)</sky>
@@ -75,7 +30,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_Windy"]/skyColorsNightEdge</xpath>
+					<xpath>/Defs/WeatherDef[defName = "RG_Overcast" or defName = "RG_Windy"]/skyColorsNightEdge</xpath>
 					<value>
 						<skyColorsNightEdge>
 							<sky>(0.22,0.22,0.38)</sky>
@@ -86,7 +41,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_Windy"]/skyColorsNightMid</xpath>
+					<xpath>/Defs/WeatherDef[defName = "RG_Overcast" or defName = "RG_Windy"]/skyColorsNightMid</xpath>
 					<value>
 						<skyColorsNightMid>
 							<sky>(0.117,0.117,0.147)</sky>
@@ -134,10 +89,10 @@
 					<xpath>/Defs/WeatherDef[defName = "RG_Hail" or defName = "RG_Drizzle" or defName = "RG_Monsoon"]/skyColorsNightMid</xpath>
 					<value>
 						<skyColorsNightMid>
-							<sky>(0.08,0.14,0.15)</sky>
+							<sky>(0.055,0.115,0.125)</sky>
 							<shadow>(0.8,0.8,0.8)</shadow>
 							<overlay>(0.75,0.75,0.75)</overlay>
-							<saturation>0.6</saturation>
+							<saturation>1.35</saturation>
 						</skyColorsNightMid>
 					</value>
 				</li>
@@ -146,9 +101,9 @@
 					<xpath>/Defs/WeatherDef[defName = "RG_FoggySnow"]/skyColorsDay</xpath>
 					<value>
 						<skyColorsDay>
-							<sky>(0.75,0.9,0.9)</sky>
+							<sky>(0.75,0.75,0.75)</sky>
 							<shadow>(1,1,1)</shadow>
-							<overlay>(1,1,1)</overlay>
+							<overlay>(0.765,0.765,0.765)</overlay>
 							<saturation>0.75</saturation>
 						</skyColorsDay>
 					</value>
@@ -157,10 +112,10 @@
 					<xpath>/Defs/WeatherDef[defName = "RG_FoggySnow"]/skyColorsDusk</xpath>
 					<value>
 						<skyColorsDusk>
-							<sky>(0.18,0.3,0.3)</sky>
+							<sky>(0.5,0.17,0.1)</sky>
 							<shadow>(1,1,1)</shadow>
-							<overlay>(0.8,0.8,0.8)</overlay>
-							<saturation>0.7</saturation>
+							<overlay>(0.7,0.7,0.7)</overlay>
+							<saturation>0.85</saturation>
 						</skyColorsDusk>
 					</value>
 				</li>
@@ -168,10 +123,10 @@
 					<xpath>/Defs/WeatherDef[defName = "RG_FoggySnow"]/skyColorsNightEdge</xpath>
 					<value>
 						<skyColorsNightEdge>
-							<sky>(0.11,0.1,0.15)</sky>
+							<sky>(0.2,0.25,0.22)</sky>
 							<shadow>(1,1,1)</shadow>
 							<overlay>(0.6,0.6,0.6)</overlay>
-							<saturation>0.7</saturation>
+							<saturation>0.95</saturation>
 						</skyColorsNightEdge>
 					</value>
 				</li>
@@ -179,10 +134,10 @@
 					<xpath>/Defs/WeatherDef[defName = "RG_FoggySnow"]/skyColorsNightMid</xpath>
 					<value>
 						<skyColorsNightMid>
-							<sky>(0.06,0.06,0.06)</sky>
+							<sky>(0.08,0.18,0.1)</sky>
 							<shadow>(0.8,0.8,0.8)</shadow>
-							<overlay>(0.6,0.6,0.6)</overlay>
-							<saturation>1.2</saturation>
+							<overlay>(0.8,0.8,0.8)</overlay>
+							<saturation>1.35</saturation>
 						</skyColorsNightMid>
 					</value>
 				</li>
@@ -227,51 +182,6 @@
 							<sky>(0.16,0.16,0.16)</sky>
 							<shadow>(1,1,1)</shadow>
 							<overlay>(0.3,0.3,0.3)</overlay>
-							<saturation>1.2</saturation>
-						</skyColorsNightMid>
-					</value>
-				</li>
-				<!--============================================== RG_FoggySandstorm ==============================================-->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_FoggySandstorm"]/skyColorsDay</xpath>
-					<value>
-						<skyColorsDay>
-							<sky>(0.75,0.9,0.9)</sky>
-							<shadow>(1,1,1)</shadow>
-							<overlay>(1,1,1)</overlay>
-							<saturation>0.75</saturation>
-						</skyColorsDay>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_FoggySandstorm"]/skyColorsDusk</xpath>
-					<value>
-						<skyColorsDusk>
-							<sky>(0.18,0.3,0.3)</sky>
-							<shadow>(1,1,1)</shadow>
-							<overlay>(0.8,0.8,0.8)</overlay>
-							<saturation>0.7</saturation>
-						</skyColorsDusk>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_FoggySandstorm"]/skyColorsNightEdge</xpath>
-					<value>
-						<skyColorsNightEdge>
-							<sky>(0.11,0.1,0.15)</sky>
-							<shadow>(1,1,1)</shadow>
-							<overlay>(0.6,0.6,0.6)</overlay>
-							<saturation>0.7</saturation>
-						</skyColorsNightEdge>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/WeatherDef[defName = "RG_FoggySandstorm"]/skyColorsNightMid</xpath>
-					<value>
-						<skyColorsNightMid>
-							<sky>(0.06,0.06,0.06)</sky>
-							<shadow>(0.8,0.8,0.8)</shadow>
-							<overlay>(0.6,0.6,0.6)</overlay>
 							<saturation>1.2</saturation>
 						</skyColorsNightMid>
 					</value>
