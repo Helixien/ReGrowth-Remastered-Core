@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ReGrowthCore.ActiveTerrainDef Abstract="True" Name="RG_LavaBase">
+	<VFECore.ActiveTerrainDef Abstract="True" Name="RG_LavaBase">
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<waterDepthShaderParameters>
 			<_WaterRippleIntensity>2</_WaterRippleIntensity>
@@ -24,12 +24,12 @@
 			<li>Lava</li>
 		</tags>
 		<modExtensions>
-			<li Class="ReGrowthCore.DefExtension_ShaderSpeedMult">
+			<li Class="VFECore.DefExtension_ShaderSpeedMult">
 				<timeMult>0.005</timeMult>
 			</li>
 		</modExtensions>
-	</ReGrowthCore.ActiveTerrainDef>
-	<ReGrowthCore.ActiveTerrainDef ParentName="RG_LavaBase">
+	</VFECore.ActiveTerrainDef>
+	<VFECore.ActiveTerrainDef ParentName="RG_LavaBase">
 		<defName>RG_Lava</defName>
 		<texturePath>Terrain/Surfaces/Lava</texturePath>
 		<label>lava</label>
@@ -43,14 +43,14 @@
 			<li>RG_Lava</li>
 		</affordances>
 		<terrainComps>
-			<li Class="ReGrowthCore.TerrainCompProperties_HeatPush">
+			<li Class="VFECore.TerrainCompProperties_HeatPush">
 				<pushAmount>20</pushAmount>
 				<targetTemp>120</targetTemp>
 			</li>
-			<li Class="ReGrowthCore.TerrainCompProperties_Glower">
+			<li Class="VFECore.TerrainCompProperties_Glower">
 				<glowRadius>4</glowRadius>
 				<glowColor>(178,58,0,0)</glowColor>
 			</li>
 		</terrainComps>
-	</ReGrowthCore.ActiveTerrainDef>
+	</VFECore.ActiveTerrainDef>
 </Defs>

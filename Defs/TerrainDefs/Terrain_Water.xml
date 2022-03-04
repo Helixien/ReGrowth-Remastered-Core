@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ReGrowthCore.ActiveTerrainDef ParentName="WaterShallowBase">
+	<VFECore.ActiveTerrainDef ParentName="WaterShallowBase">
 		<defName>RG_HotSpring</defName>
 		<label>hot spring</label>
 		<texturePath>Terrain/Surfaces/HotSpring</texturePath>
@@ -10,7 +10,7 @@
 		<traversedThought>RG_HotSpringWet</traversedThought>
 		<tickerType>Rare</tickerType>
 		<terrainComps>
-			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
+			<li Class="VFECore.TerrainCompProperties_MoteSpawner">
 				<moteDef>RG_Mote_WaterFog</moteDef>
 				<tickInterval>60~500</tickInterval>
 				<size>2~8</size>
@@ -23,8 +23,8 @@
 				<spawnChance>0.04</spawnChance>
 			</li>
 		</terrainComps>
-	</ReGrowthCore.ActiveTerrainDef>
-	<ReGrowthCore.ActiveTerrainDef ParentName="WaterDeepBase">
+	</VFECore.ActiveTerrainDef>
+	<VFECore.ActiveTerrainDef ParentName="WaterDeepBase">
 		<defName>RG_HotSpringDeep</defName>
 		<label>deep hot spring</label>
 		<texturePath>Terrain/Surfaces/HotSpringDeep</texturePath>
@@ -32,7 +32,7 @@
 		<renderPrecedence>395</renderPrecedence>
 		<tickerType>Rare</tickerType>
 		<terrainComps>
-			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
+			<li Class="VFECore.TerrainCompProperties_MoteSpawner">
 				<moteDef>RG_Mote_WaterFog</moteDef>
 				<tickInterval>60~500</tickInterval>
 				<size>6~30</size>
@@ -45,7 +45,7 @@
 				<spawnChance>0.10</spawnChance>
 			</li>
 		</terrainComps>
-	</ReGrowthCore.ActiveTerrainDef>
+	</VFECore.ActiveTerrainDef>
 	<TerrainDef Abstract="True" Name="RG_ToxicWasteBase">
 		<edgeType>Water</edgeType>
 		<fertility>0</fertility>
