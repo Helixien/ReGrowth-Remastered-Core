@@ -45,21 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActiveTerrain\ActiveTerrainUtility.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainCompBase.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainCompProperties.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainComps_Power.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainComp_Glower.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainComp_MoteSpawner.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainComp_HeatPush.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainComp_SelfClean - Copy.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainComp_SelfClean.cs" />
-    <Compile Include="ActiveTerrain\Comps\TerrainComp_TempControl.cs" />
-    <Compile Include="ActiveTerrain\DefExtensionActive.cs" />
-    <Compile Include="ActiveTerrain\Patches.cs" />
-    <Compile Include="ActiveTerrain\SpecialTerrain.cs" />
-    <Compile Include="ActiveTerrain\SpecialTerrainList.cs" />
-    <Compile Include="ActiveTerrain\ThingComps.cs" />
     <Compile Include="BiomeWorkers\BiomePerlin.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_AnimaForest.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_BlackSwamp.cs" />
@@ -67,7 +52,6 @@
     <Compile Include="BiomeWorkers\BiomeWorker_NeverSpawn.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_VolcanicIceSheet.cs" />
     <Compile Include="HarmonyPatches\CanEverPlantAt_Patch.cs" />
-    <Compile Include="HarmonyPatches\HarmonyInit.cs" />
     <Compile Include="Incidents\IncidentWorker_DevilDusts.cs" />
     <Compile Include="Jobs\JobDriver_SwimInHotSpring.cs" />
     <Compile Include="Jobs\JoyGiver_SwimInHotSpring.cs" />

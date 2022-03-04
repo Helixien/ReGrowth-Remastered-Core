@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using HarmonyLib;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace ReGrowthCore
         public ReGrowthMod(ModContentPack pack) : base(pack)
         {
             settings = GetSettings<ReGrowthSettings>();
+            new Harmony("Helixien.ReGrowthCore").PatchAll();
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
