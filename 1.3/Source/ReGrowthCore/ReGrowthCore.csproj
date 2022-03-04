@@ -52,6 +52,7 @@
     <Compile Include="BiomeWorkers\BiomeWorker_NeverSpawn.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_VolcanicIceSheet.cs" />
     <Compile Include="HarmonyPatches\CanEverPlantAt_Patch.cs" />
+    <Compile Include="HarmonyPatches\IncidentWorker_MakeGameConditionPatch.cs" />
     <Compile Include="Incidents\IncidentWorker_DevilDusts.cs" />
     <Compile Include="Jobs\JobDriver_SwimInHotSpring.cs" />
     <Compile Include="Jobs\JoyGiver_SwimInHotSpring.cs" />

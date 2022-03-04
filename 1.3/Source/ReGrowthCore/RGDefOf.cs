@@ -34,6 +34,8 @@ namespace ReGrowthCore
 		public static JobDef RG_SwimInHotSpring;
 
 		public static ThoughtDef RG_HotSpringThought;
+
+		public static GameConditionDef Aurora;
 	}
 }
 
