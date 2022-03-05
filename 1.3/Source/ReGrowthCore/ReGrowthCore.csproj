@@ -59,7 +59,6 @@
     <Compile Include="ModExtensions\PlantExtension.cs" />
     <Compile Include="MultiplayerSupport.cs" />
     <Compile Include="ReGrowthMod.cs" />
-    <Compile Include="ReGrowthSettings.cs" />
     <Compile Include="RGDefOf.cs" />
     <Compile Include="Things\DevilDust_Tornado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
