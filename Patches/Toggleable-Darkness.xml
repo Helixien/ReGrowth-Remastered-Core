@@ -8,7 +8,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/GameConditionDef[defName = "Eclipse"]/conditionClass</xpath>
 				<value>
-					<conditionClass>RealisticDarkness.GameCondition_NoSunlightDark</conditionClass>
+					<conditionClass>ReGrowthCore.GameCondition_NoSunlightDark_RealisticDarkness</conditionClass>
 				</value>
 			</li>
 			<!--============================================== Clear ==============================================-->

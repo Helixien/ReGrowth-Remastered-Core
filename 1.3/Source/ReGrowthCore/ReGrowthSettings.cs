@@ -8,6 +8,7 @@ using Verse;
 
 namespace ReGrowthCore
 {
+
     class ReGrowthSettings : ModSettings
     {
         public static bool SpawnAutumnLeaves = true;
