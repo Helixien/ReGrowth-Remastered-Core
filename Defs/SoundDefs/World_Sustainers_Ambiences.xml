@@ -13,7 +13,7 @@
 						<clipPath>Ambience/Amb_DustDevil_Loop</clipPath>
 					</li>
 				</grains>
-				<volumeRange>70~70</volumeRange>
+				<volumeRange>60~60</volumeRange>
 				<sustainAttack>2.5</sustainAttack>
 				<sustainRelease>2.5</sustainRelease>
 				<distRange>0~20</distRange>
@@ -33,7 +33,7 @@
 						<clipPath>Ambience/Amb_Hail_Loop</clipPath>
 					</li>
 				</grains>
-				<volumeRange>7~7</volumeRange>
+				<volumeRange>5~5</volumeRange>
 				<paramMappings>
 					<li>
 						<inParam Class="SoundParamSource_CameraAltitude"/>
@@ -107,7 +107,7 @@
 						<clipPath>Ambience/Amb_Drizzle_Loop</clipPath>
 					</li>
 				</grains>
-				<volumeRange>7~7</volumeRange>
+				<volumeRange>5~5</volumeRange>
 				<paramMappings>
 					<li>
 						<inParam Class="SoundParamSource_CameraAltitude"/>
@@ -181,7 +181,7 @@
 						<clipPath>Ambience/Amb_Blizzard_Loop</clipPath>
 					</li>
 				</grains>
-				<volumeRange>7~7</volumeRange>
+				<volumeRange>5~5</volumeRange>
 				<paramMappings>
 					<li>
 						<inParam Class="SoundParamSource_CameraAltitude"/>
@@ -255,7 +255,7 @@
 						<clipPath>Ambience/Amb_Sandstorm_Loop</clipPath>
 					</li>
 				</grains>
-				<volumeRange>7~7</volumeRange>
+				<volumeRange>5~5</volumeRange>
 				<paramMappings>
 					<li>
 						<inParam Class="SoundParamSource_CameraAltitude"/>

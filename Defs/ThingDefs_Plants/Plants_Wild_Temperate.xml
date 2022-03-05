@@ -38,6 +38,13 @@
 			<topWindExposure>0.3</topWindExposure>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<humanFoodPlant>true</humanFoodPlant>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowResearchPrerequisites/>
 		</plant>
 	</ThingDef>
 </Defs>

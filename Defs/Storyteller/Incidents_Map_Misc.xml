@@ -11,11 +11,14 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>ReGrowthCore.IncidentWorker_DevilDusts</workerClass>
-		<baseChance>1.0</baseChance>
+		<baseChance>0.8</baseChance>
 		<allowedBiomes>
 			<li>AridShrubland</li>
 			<li>Desert</li>
 			<li>ExtremeDesert</li>
+			<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_DesertOasis</li>
+			<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Sandbar_NoBeach</li>
+			<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_CoastalDunes</li>
 		</allowedBiomes>
 	</IncidentDef>
 </Defs>

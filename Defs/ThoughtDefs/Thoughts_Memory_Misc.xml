@@ -59,7 +59,7 @@
 		<stages>
 			<li>
 				<label>warm water</label>
-				<description>The water from that hot spring felt amazing!</description>
+				<description>The hot water from the hot spring felt amazing!</description>
 				<baseMoodEffect>+3</baseMoodEffect>
 			</li>
 		</stages>

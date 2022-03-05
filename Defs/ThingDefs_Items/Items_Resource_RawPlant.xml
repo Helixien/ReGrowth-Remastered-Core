@@ -9,8 +9,8 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>0.4</MarketValue>
-			<Nutrition>0.02</Nutrition>
-			<FoodPoisonChanceFixedHuman>0.30</FoodPoisonChanceFixedHuman>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.04</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
