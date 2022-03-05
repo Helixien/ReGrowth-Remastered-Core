@@ -34,8 +34,6 @@ namespace ReGrowthCore
 
         public static bool DisableHailDamage = false;
 
-        public static bool MakeAuroraPermanent = false;
-
         public override void ExposeData()
         {
             base.ExposeData();
@@ -44,7 +42,6 @@ namespace ReGrowthCore
             Scribe_Values.Look(ref SpawnFogOnHotSprings, "SpawnFogOnHotSprings", true);
             Scribe_Values.Look(ref FlashUpdateCell, "FlashUpdateCell", false);
             Scribe_Values.Look(ref DisableHailDamage, "DisableHailDamage", false);
-            Scribe_Values.Look(ref MakeAuroraPermanent, "MakeAuroraPermanent", false);
             //Scribe_Values.Look(ref ColdFog, "ColdFog", true);
             //Scribe_Values.Look(ref IceLayer, "IceLayer", true);
             //Scribe_Values.Look(ref RainWaterPuddles, "RainWaterPuddles", true);
@@ -63,7 +60,6 @@ namespace ReGrowthCore
             listingStandard.CheckboxLabeled("RG.SpawnLeaves".Translate(), ref SpawnLeaves);
             listingStandard.CheckboxLabeled("RG.SpawnFogOnHotSprings".Translate(), ref SpawnFogOnHotSprings);
             listingStandard.CheckboxLabeled("RG.DisableHailDamage".Translate(), ref DisableHailDamage);
-            listingStandard.CheckboxLabeled("RG.MakeAuroraPermanent".Translate(), ref MakeAuroraPermanent);
             listingStandard.CheckboxLabeled("DEBUG: Flash Ticks", ref FlashUpdateCell);
             //listingStandard.CheckboxLabeled("RG.ColdFog".Translate(), ref ColdFog);
             //listingStandard.CheckboxLabeled("RG.IceLayer".Translate(), ref IceLayer);
