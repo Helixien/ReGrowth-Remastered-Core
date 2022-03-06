@@ -147,10 +147,20 @@ namespace ReGrowthCore
 			}
 			direction += (float)directionNoise.GetValue(Find.TickManager.TicksAbs, (float)(thingIDNumber % 500) * 1000f, 0.0) * 0.78f; ;
 			var movedPosition = realPosition.Moved(direction, 17f / 600f);
-			if (!new Vector3(movedPosition.x, 0f, movedPosition.y).ToIntVec3().Roofed(this.Map))
+			var cell = new Vector3(movedPosition.x, 0f, movedPosition.y).ToIntVec3();
+			if (this.Map is null)
             {
-				realPosition = movedPosition;
+				Destroy();
+				return;
+            }
+			if (cell.IsValid && this.Map != null)
+            {
+				if (!cell.InBounds(this.Map) || !cell.Roofed(this.Map))
+				{
+					realPosition = movedPosition;
+				}
 			}
+
 			IntVec3 intVec = new Vector3(realPosition.x, 0f, realPosition.y).ToIntVec3();
 			if (intVec.InBounds(base.Map))
 			{
