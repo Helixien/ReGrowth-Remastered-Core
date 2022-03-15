@@ -85,7 +85,6 @@
 			<saturation>1.25</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
-	
 	<WeatherDef>
 		<defName>RG_Hail</defName>
 		<label>hail</label>
@@ -160,7 +159,6 @@
 			</li>
 		</modExtensions>
 	</WeatherDef>
-	
 	<!-- ================ New rain weathers ================ -->
 	<WeatherDef>
 		<defName>RG_Drizzle</defName>
@@ -417,6 +415,66 @@
 		</modExtensions>
 	</WeatherDef>
 	<!-- ================ New desert weathers ================ -->
+	<WeatherDef>
+		<defName>RG_FoggySandstorm</defName>
+		<label>foggy sandstorm</label>
+		<isBad>true</isBad>
+		<description>Sand is blown around by wind and fog reduces the accuracy of ranged weapons.</description>
+		<windSpeedFactor>0.5</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>RG_Sandy</exposedThought>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Fog</li>
+			<li>RG_Ambient_Sandstorm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+			<li>VFECore.WeatherOverlay_Custom</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<skyColorsDay>
+			<sky>(0.8,0.7,0.57)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.57,0.43)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,0.9,0.77)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.47,0.33)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.25,0.12)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.4,0.27,0.23)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.25,0.12)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.4,0.27,0.23)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="VFECore.WeatherOverlayExtension">
+				<overlayPath>Weather/SandstormWorldOverlay</overlayPath>
+				<copyPropertiesFrom>Weather/SnowOverlayWorld</copyPropertiesFrom>
+				<worldOverlayPanSpeed1>0.015</worldOverlayPanSpeed1>
+				<worldPanDir1>(0.25, 0)</worldPanDir1>
+				<worldOverlayPanSpeed2>0.022</worldOverlayPanSpeed2>
+				<worldPanDir2>(0.24, 0)</worldPanDir2>
+			</li>
+		</modExtensions>
+	</WeatherDef>
 	<WeatherDef>
 		<defName>RG_SandStorm</defName>
 		<label>sandstorm</label>
