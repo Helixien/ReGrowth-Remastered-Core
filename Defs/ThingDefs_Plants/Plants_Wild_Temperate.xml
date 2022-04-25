@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_Raspberry</defName>
 		<label>raspberry bush</label>
-		<description>A bushy plant which yields delicious red berries.</description>
+		<description>A bushy wild plant which yields delicious red berries. Berries can be cooked, but they're also good to eat even when raw.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Nutrition>0.35</Nutrition>
