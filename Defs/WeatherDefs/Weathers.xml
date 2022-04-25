@@ -4,7 +4,7 @@
 	<WeatherDef>
 		<defName>RG_Overcast</defName>
 		<label>overcast</label>
-		<description>Clouds cover the sky, but it is not raining.</description>
+		<description>Clouds cover the skies, casting various shadows.</description>
 		<repeatable>true</repeatable>
 		<favorability>Neutral</favorability>
 		<perceivePriority>0</perceivePriority>
@@ -52,7 +52,7 @@
 	<WeatherDef>
 		<defName>RG_Windy</defName>
 		<label>windy</label>
-		<description>Light winds help turbines but reduces the accuracy of ranged weapons.</description>
+		<description>Consistent wind that reduces ranged weapon accuracy.</description>
 		<repeatable>true</repeatable>
 		<favorability>Neutral</favorability>
 		<windSpeedFactor>1.8</windSpeedFactor>
@@ -88,7 +88,7 @@
 	<WeatherDef>
 		<defName>RG_Hail</defName>
 		<label>hail</label>
-		<description>Pellets of frozen rain fall from cumulonimbus clouds. Any person or creature not under the roof risks getting injured by them.</description>
+		<description>Hard, frozen rain that can injure exposed pawns.</description>
 		<temperatureRange>-999~1.5</temperatureRange>
 		<windSpeedFactor>1.0</windSpeedFactor>
 		<accuracyMultiplier>0.6</accuracyMultiplier>
@@ -138,7 +138,7 @@
 			<li Class="VFECore.WeatherLetterExtensions">
 				<letterDef>NeutralEvent</letterDef>
 				<letterTitle>Hail</letterTitle>
-				<letterText>Pellets of frozen rain fall from cumulonimbus clouds. Any person or creature not under the roof risks getting injured by them.</letterText>
+				<letterText>Numerous pellets of ice fall from cumulonimbus clouds, the randomness of their sizes can cause injuries to those not under a roof.</letterText>
 			</li>
 			<li Class="VFECore.WeatherOverlayExtension">
 				<overlayPath>Weather/HailWorldOverlay</overlayPath>
@@ -163,7 +163,7 @@
 	<WeatherDef>
 		<defName>RG_Drizzle</defName>
 		<label>drizzle</label>
-		<description>Very light rain. It barely effects ranged weapons or people.</description>
+		<description>Very fine but prominent rain which slightly reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>0~100</temperatureRange>
 		<windSpeedFactor>1.0</windSpeedFactor>
 		<accuracyMultiplier>0.9</accuracyMultiplier>
@@ -223,7 +223,7 @@
 	<WeatherDef>
 		<defName>RG_Monsoon</defName>
 		<label>monsoon</label>
-		<description>Extremely strong rain falls from thick clouds. It extinguishes fire and makes movement, as well as the usage of ranged weapons, near impossible.</description>
+		<description>Extremely intense rainfall and strong winds, extinguishes fires and severely reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>-1~999</temperatureRange>
 		<windSpeedFactor>1.5</windSpeedFactor>
 		<accuracyMultiplier>0.3</accuracyMultiplier>
@@ -275,7 +275,7 @@
 			<li Class="VFECore.WeatherLetterExtensions">
 				<letterDef>ThreatSmall</letterDef>
 				<letterTitle>Monsoon</letterTitle>
-				<letterText>Extremely strong rain falls from thick clouds. It extinguishes fire and makes movement, as well as the usage of ranged weapons, near impossible.</letterText>
+				<letterText>A seasonal prevailing wind bringing intense amounts of rainfall, severely affecting ranged weapon accuracy and movement speed, as well as extinguishing fires.</letterText>
 			</li>
 			<li Class="VFECore.WeatherOverlayExtension">
 				<overlayPath>Weather/CloudyWorldOverlay</overlayPath>
@@ -300,7 +300,7 @@
 		<defName>RG_FoggySnow</defName>
 		<label>foggy snow</label>
 		<isBad>true</isBad>
-		<description>Snow and fog reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
+		<description>Heavy snow with fog that reduces ranged weapon accuracy, extinguishes fires and reduces movement speed.</description>
 		<temperatureRange>-999~-0.5</temperatureRange>
 		<windSpeedFactor>1.5</windSpeedFactor>
 		<favorability>Neutral</favorability>
@@ -352,7 +352,7 @@
 	<WeatherDef>
 		<defName>RG_Blizzard</defName>
 		<label>blizzard</label>
-		<description>Extremely strong snowfall and strong winds reduces the accuracy of ranged weapon and slows people down.</description>
+		<description>Severe snowstorm with high winds, reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>-999~-0.5</temperatureRange>
 		<snowRate>2.5</snowRate>
 		<windSpeedFactor>2.0</windSpeedFactor>
@@ -402,7 +402,7 @@
 			<li Class="VFECore.WeatherLetterExtensions">
 				<letterDef>ThreatSmall</letterDef>
 				<letterTitle>Blizzard</letterTitle>
-				<letterText>Extremely strong snowfall and strong winds reduces the accuracy of ranged weapon and slows people down.</letterText>
+				<letterText>A severe snowstorm combined with high winds can be deadly to those without proper clothing, heavily affecting both ranged weapon accuracy and movement speed.</letterText>
 			</li>
 			<li Class="VFECore.WeatherOverlayExtension">
 				<overlayPath>Weather/BlizzardWorldOverlay</overlayPath>
@@ -419,7 +419,7 @@
 		<defName>RG_FoggySandstorm</defName>
 		<label>foggy sandstorm</label>
 		<isBad>true</isBad>
-		<description>Sand is blown around by wind and fog reduces the accuracy of ranged weapons.</description>
+		<description>Winds carrying clouds of sand and fog, reducing movement speed and limiting ranged weapon accuracy.</description>
 		<windSpeedFactor>0.5</windSpeedFactor>
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
@@ -478,7 +478,7 @@
 	<WeatherDef>
 		<defName>RG_SandStorm</defName>
 		<label>sandstorm</label>
-		<description>Sand is blown around by wind. Reduces the accuracy of ranged weapon and slows people down.</description>
+		<description>Strong winds carrying clouds of sand, reduces ranged weapon accuracy and movement speed.</description>
 		<windSpeedFactor>1.0</windSpeedFactor>
 		<accuracyMultiplier>0.8</accuracyMultiplier>
 		<favorability>Bad</favorability>
@@ -536,7 +536,7 @@
 	<WeatherDef>
 		<defName>RG_SandStormHard</defName>
 		<label>hard sandstorm</label>
-		<description>Blowing sand and wind extremly reducesthe accuracy of ranged weapon and slows people down.</description>
+		<description>Harsh gales carrying clouds of sand, limits ranged weapon accuracy and movement speed.</description>
 		<windSpeedFactor>2.0</windSpeedFactor>
 		<accuracyMultiplier>0.6</accuracyMultiplier>
 		<favorability>Bad</favorability>
