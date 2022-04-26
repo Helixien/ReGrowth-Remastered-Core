@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--=============== Hot Spring ==============-->
 	<JoyGiverDef>
 		<defName>RG_SwimInHotSpring</defName>
 		<giverClass>ReGrowthCore.JoyGiver_SwimInHotSpring</giverClass>
